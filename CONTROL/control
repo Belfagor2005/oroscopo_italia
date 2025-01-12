@@ -1,0 +1,11 @@
+Package: enigma2-plugin-extensions-oroscopo
+Version: 1.0
+Section: enigma2
+Priority: optional
+Architecture: all
+Maintainer: Lululla
+Description: RadioItalia Oroscopo
+Source: enigma2-plugin-extensions-oroscopo
+Homepage: *
+OE: enigma2-plugin-extensions-oroscopo
+License: gpl

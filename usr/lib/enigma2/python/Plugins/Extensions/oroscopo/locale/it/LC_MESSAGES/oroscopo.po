@@ -1,0 +1,117 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Oroscopo Radio Italia\n"
+"POT-Creation-Date: 2025-01-12 20:16+0100\n"
+"PO-Revision-Date: 2025-01-12 20:16+0100\n"
+"Last-Translator: \n"
+"Language-Team: lululla\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-SourceCharset: iso-8859-1\n"
+"X-Poedit-SearchPath-0: plugin.py\n"
+
+#: plugin.py:90
+#, python-format
+msgid ""
+"Radioitalia Horoscope v.%s\n"
+"\n"
+"Author: Lululla\n"
+"\n"
+"Graphics: Oktus\n"
+"\n"
+"Rss Horoscope: www.rtl.it/feed/rubriche/oroscopo\n"
+"\n"
+msgstr ""
+"Radioitalia Horoscope v.%s\n"
+"\n"
+"Author: Lululla\n"
+"\n"
+"Graphics: Oktus\n"
+"\n"
+"Rss Horoscope: www.rtl.it/feed/rubriche/oroscopo\n"
+"\n"
+
+#: plugin.py:158 plugin.py:185
+msgid "Please wait, connecting to the server..."
+msgstr "Please wait, connecting to the server..."
+
+#: plugin.py:163
+msgid "Change"
+msgstr "Cambia"
+
+#: plugin.py:164 plugin.py:268 plugin.py:367
+msgid "Information"
+msgstr "Informazioni"
+
+#: plugin.py:234 plugin.py:388
+msgid "Today's Horoscope "
+msgstr "Oroscopo di oggi "
+
+#: plugin.py:343
+msgid "ARIES"
+msgstr "ARIETE"
+
+#: plugin.py:343
+msgid "TAURUS"
+msgstr "TORO"
+
+#: plugin.py:343
+msgid "GEMINI"
+msgstr "GEMELLI"
+
+#: plugin.py:343
+msgid "CANCER"
+msgstr "CANCRO"
+
+#: plugin.py:344
+msgid "LION"
+msgstr "LEONE"
+
+#: plugin.py:344
+msgid "VIRGIN"
+msgstr "VERGINE"
+
+#: plugin.py:344
+msgid "LIBRA"
+msgstr "BILANCIA"
+
+#: plugin.py:344
+msgid "SCORPION"
+msgstr "SCORPIONE"
+
+#: plugin.py:345
+msgid "SAGITTARIUS"
+msgstr "SAGITTARIO"
+
+#: plugin.py:345
+msgid "CAPRICORN"
+msgstr "CAPRICORNO"
+
+#: plugin.py:345
+msgid "AQUARIUS"
+msgstr "ACQUARIO"
+
+#: plugin.py:345
+msgid "PISCES"
+msgstr "PESCI"
+
+#: plugin.py:349
+msgid "Select a Zodiac Sign"
+msgstr "Seleziona un Segno Zodiacale"
+
+#: plugin.py:352
+msgid "Close"
+msgstr "Esci"
+
+#: plugin.py:353
+msgid "Select"
+msgstr "Seleziona"
+
+#: plugin.py:388
+msgid "RadioItalia Horoscope"
+msgstr "Oroscopo Radio Italia"
