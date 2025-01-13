@@ -127,7 +127,7 @@ distro_value=$(grep '^distro=' "$FILE" | awk -F '=' '{print $2}')
 distro_version=$(grep '^version=' "$FILE" | awk -F '=' '{print $2}')
 python_vers=$(python --version 2>&1)
 echo "#########################################################
-#          Horoscope INSTALLED SUCCESSFULLY             #
+#               INSTALLED SUCCESSFULLY                  #
 #                developed by LULULLA                   #
 #               https://corvoboys.org                   #
 #########################################################

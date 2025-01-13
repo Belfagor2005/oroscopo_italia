@@ -1,4 +1,4 @@
-Horoscope Radioitalia for enigma image
+Horoscope for enigma image
 
 versione 1.0
 
