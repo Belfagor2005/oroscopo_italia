@@ -140,10 +140,10 @@ class oroscopoMain(Screen):
                 <widget name="key_yellow" render="Label" position="434,677" size="200,30" zPosition="11" font="Regular; 20" valign="center" halign="center" backgroundColor="background" transparent="1" foregroundColor="white" />
                 <widget name="key_blue" render="Label" position="641,677" size="200,30" zPosition="11" font="Regular; 20" valign="center" halign="center" backgroundColor="background" transparent="1" foregroundColor="white" />
                 -->
-                <widget name="date" position="290,60" halign="center" size="725,43" zPosition="5" font="Regular; 28" valign="center" transparent="1" />
+                <widget name="date" position="290,34" halign="center" size="725,43" zPosition="5" font="Regular; 28" valign="center" transparent="1" />
                 <widget name="lab1" position="290,630" halign="center" size="725,35" zPosition="5" font="Regular; 22" valign="top" transparent="1" />
-                <widget name="lab2" position="290,215" halign="center" size="725,35" zPosition="5" font="Regular; 24" valign="top" transparent="1" />
-                <widget name="lab3" position="612,125" size="80,80" cornerRadius="20" zPosition="5" scale="1" transparent="0" />
+                <widget name="lab2" position="290,225" halign="center" size="725,35" zPosition="5" font="Regular; 24" valign="top" transparent="1" />
+                <widget name="lab3" position="586,80" size="140,140" cornerRadius="20" zPosition="5" scale="1" transparent="0" />
                 <widget name="lab4" position="290,265" halign="center" size="725,350" zPosition="5" font="Regular;22" valign="top" transparent="1" />
             </screen>
             """
@@ -172,7 +172,6 @@ class oroscopoMain(Screen):
             self.timer_conn = self.timer.timeout.connect(self.startConnection)
         else:
             self.timer.callback.append(self.startConnection)
-        # self.timer.timeout.get().append(self.startConnection)
         self.onShow.append(self.startShow)
         self.onClose.append(self.delTimer)
 
@@ -286,10 +285,10 @@ class oroscopoSelectsign(Screen):
                     -->
                     <widget name="date" position="585,90" halign="center" size="745,65" zPosition="5" font="Regular; 42" valign="center" transparent="1" />
                     <widget name="lab1" position="461,953" halign="center" size="1000,50" zPosition="5" font="Regular; 36" valign="center" transparent="1" />
-                    <widget source="list" render="Listbox" position="460,205" size="1000,720" scrollbarMode="showOnDemand" transparent="1" zPosition="5" foregroundColor="#00a0a0a0" foregroundColorSelected="#ffffff" backgroundColor="#20000000" backgroundColorSelected="#0b2049">
+                    <widget source="list" render="Listbox" position="705,205" size="500,720" scrollbarMode="showOnDemand" transparent="1" zPosition="5" foregroundColor="#00a0a0a0" foregroundColorSelected="#ffffff" backgroundColor="#20000000" backgroundColorSelected="#0b2049">
                         <convert type="TemplatedMultiContent">
                             {"template": [
-                                MultiContentEntryText(pos=(0, 0), size=(800, 50), font=0, flags=RT_HALIGN_LEFT, text=0),  # Nome script
+                                MultiContentEntryText(pos=(0, 0), size=(500, 50), font=0, flags=RT_HALIGN_CENTER, text=0),  # Nome script
                                 <!-- MultiContentEntryText(pos=(300, 0), size=(500, 50), font=0, flags=RT_HALIGN_RIGHT, text=1),  # Descrizione -->
                             ],
                             "fonts": [gFont("Regular", 34)],
@@ -318,10 +317,10 @@ class oroscopoSelectsign(Screen):
                 -->
                 <widget name="date" position="290,60" halign="center" size="725,43" zPosition="5" font="Regular; 28" valign="center" transparent="1" />
                 <widget name="lab1" position="290,630" halign="center" size="725,35" zPosition="5" font="Regular; 22" valign="top" transparent="1" />
-                <widget source="list" render="Listbox" position="290,125" size="725,470" scrollbarMode="showOnDemand" transparent="1" zPosition="5" foregroundColor="#00a0a0a0" foregroundColorSelected="#ffffff" backgroundColor="#20000000" backgroundColorSelected="#0b2049">
+                <widget source="list" render="Listbox" position="442,125" size="470,470" scrollbarMode="showOnDemand" transparent="1" zPosition="5" foregroundColor="#00a0a0a0" foregroundColorSelected="#ffffff" backgroundColor="#20000000" backgroundColorSelected="#0b2049">
                     <convert type="TemplatedMultiContent">
                         {"template": [
-                            MultiContentEntryText(pos=(0, 0), size=(533, 33), font=0, flags=RT_HALIGN_LEFT, text=0),  # Nome script
+                            MultiContentEntryText(pos=(0, 0), size=(533, 33), font=0, flags=RT_HALIGN_CENTER, text=0),  # Nome script
                             <!-- MultiContentEntryText(pos=(200, 0), size=(333, 33), font=0, flags=RT_HALIGN_RIGHT, text=1),  # Descrizione -->
                         ],
                         "fonts": [gFont("Regular", 22)],
@@ -335,7 +334,7 @@ class oroscopoSelectsign(Screen):
 
         self.list = [
             (_("ARIES"), 0), (_("TAURUS"), 1), (_("GEMINI"), 2), (_("CANCER"), 3),
-            (_("LION"), 4), (_("VIRGIN"), 5), (_("LIBRA"), 6), (_("SCORPION"), 7),
+            (_("LION"), 4), (_("VIRGO"), 5), (_("LIBRA"), 6), (_("SCORPION"), 7),
             (_("SAGITTARIUS"), 8), (_("CAPRICORN"), 9), (_("AQUARIUS"), 10), (_("PISCES"), 11)
         ]
 
@@ -379,4 +378,4 @@ def main(session, **kwargs):
 def Plugins(path, **kwargs):
     global pluginpath
     pluginpath = path
-    return PluginDescriptor(name=_("RadioItalia Horoscope"), description=_("Today's Horoscope "), icon="plugin.png", where=PluginDescriptor.WHERE_PLUGINMENU, fnc=main)
+    return PluginDescriptor(name=_("Italy Horoscope"), description=_("Today's Horoscope "), icon="plugin.png", where=PluginDescriptor.WHERE_PLUGINMENU, fnc=main)
