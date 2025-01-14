@@ -103,7 +103,6 @@ class oroscopoMain(Screen):
         skin = """
                 <screen name="oroscopoMain" position="center,center" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
                     <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/oroscopo/backg.png" position="0,0" zPosition="-2" size="1920,1080" scale="fill" alphatest="blend" />
-                    <ePixmap position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/oroscopo/backtr.png" scale="1" alphatest="blend" zPosition="-1" />
                     <eLabel backgroundColor="red" cornerRadius="3" position="34,1064" size="296,6" zPosition="11" />
                     <eLabel backgroundColor="green" cornerRadius="3" position="342,1064" size="300,6" zPosition="11" />
                     <!--
@@ -127,7 +126,6 @@ class oroscopoMain(Screen):
         skin = """
             <screen name="oroscopoMain" position="center,center" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
                 <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/oroscopo/backg.png" position="0,0" zPosition="-2" size="1280,720" scale="fill" alphatest="blend" />
-                <ePixmap position="0,0" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/oroscopo/backtr.png" scale="1" alphatest="blend" zPosition="-1" />
                 <eLabel backgroundColor="red" cornerRadius="3" position="22,709" size="197,4" zPosition="11" />
                 <eLabel backgroundColor="green" cornerRadius="3" position="228,709" size="200,4" zPosition="11" />
                 <!--
@@ -270,7 +268,6 @@ class oroscopoSelectsign(Screen):
         skin = """
                 <screen name="oroscopoSelectsign" position="center,center" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
                     <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/oroscopo/backg.png" position="0,0" zPosition="-2" size="1920,1080" scale="fill" alphatest="blend" />
-                    <ePixmap position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/oroscopo/backtr.png" scale="1" alphatest="blend" zPosition="-1" />
                     <eLabel backgroundColor="red" cornerRadius="3" position="34,1064" size="296,6" zPosition="11" />
                     <eLabel backgroundColor="green" cornerRadius="3" position="342,1064" size="300,6" zPosition="11" />
                     <!--
@@ -302,7 +299,6 @@ class oroscopoSelectsign(Screen):
 
             <screen name="oroscopoSelectsign" position="center,center" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
                 <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/oroscopo/backg.png" position="0,0" zPosition="-2" size="1280,720" scale="fill" alphatest="blend" />
-                <ePixmap position="0,0" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/oroscopo/backtr.png" scale="1" alphatest="blend" zPosition="-1" />
                 <eLabel backgroundColor="red" cornerRadius="3" position="22,709" size="197,4" zPosition="11" />
                 <eLabel backgroundColor="green" cornerRadius="3" position="228,709" size="200,4" zPosition="11" />
                 <!--
