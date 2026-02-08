@@ -1,0 +1,71 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: enigma 2\n"
+"PO-Revision-Date: 2026-02-08 01:24+0000\n"
+"Last-Translator:  <EMAIL@ADDRESS>\n"
+"Language-Team: Portuguese <translation-team-pt@googlegroups.com>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "AQUARIUS"
+msgstr ""
+
+msgid "ARIES"
+msgstr ""
+
+msgid "CANCER"
+msgstr ""
+
+msgid "CAPRICORN"
+msgstr ""
+
+msgid "Change"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "GEMINI"
+msgstr ""
+
+msgid "Information"
+msgstr ""
+
+msgid "Italy Horoscope"
+msgstr ""
+
+msgid "LIBRA"
+msgstr ""
+
+msgid "LION"
+msgstr ""
+
+msgid "PISCES"
+msgstr ""
+
+msgid "Please wait, connecting to the server..."
+msgstr ""
+
+msgid "SAGITTARIUS"
+msgstr ""
+
+msgid "SCORPION"
+msgstr ""
+
+msgid "Select"
+msgstr ""
+
+msgid "Select a Zodiac Sign"
+msgstr ""
+
+msgid "TAURUS"
+msgstr ""
+
+msgid "Today's Horoscope"
+msgstr ""
+
+msgid "VIRGO"
+msgstr ""

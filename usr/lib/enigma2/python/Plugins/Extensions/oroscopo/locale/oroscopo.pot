@@ -1,110 +1,61 @@
 #, fuzzy
-msgid ""
-msgstr ""
-"Project-Id-Version: Oroscopo Radio Italia\n"
-"POT-Creation-Date: 2025-01-13 13:42+0100\n"
-"PO-Revision-Date: 2025-01-12 18:23+0100\n"
-"Last-Translator: \n"
-"Language-Team: lululla\n"
-"Language: it_IT\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.5\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-SourceCharset: iso-8859-1\n"
-"X-Poedit-SearchPath-0: plugin.py\n"
 
-#: plugin.py:44
-#, python-format
-msgid ""
-"Radioitalia Horoscope v.%s\n"
-"\n"
-"Author: Lululla\n"
-"\n"
-"Graphics: Oktus\n"
-"\n"
-"Rss Horoscope: www.rtl.it/feed/rubriche/oroscopo\n"
-"\n"
-msgstr ""
-
-#: plugin.py:153 plugin.py:179
-msgid "Please wait, connecting to the server..."
-msgstr ""
-
-#: plugin.py:158
-msgid "Change"
-msgstr ""
-
-#: plugin.py:159 plugin.py:261 plugin.py:360
-msgid "Information"
-msgstr ""
-
-#: plugin.py:227 plugin.py:381
-msgid "Today's Horoscope "
-msgstr ""
-
-#: plugin.py:336
-msgid "ARIES"
-msgstr ""
-
-#: plugin.py:336
-msgid "TAURUS"
-msgstr ""
-
-#: plugin.py:336
-msgid "GEMINI"
-msgstr ""
-
-#: plugin.py:336
-msgid "CANCER"
-msgstr ""
-
-#: plugin.py:337
-msgid "LION"
-msgstr ""
-
-#: plugin.py:337
-msgid "VIRGO"
-msgstr ""
-
-#: plugin.py:337
-msgid "LIBRA"
-msgstr ""
-
-#: plugin.py:337
-msgid "SCORPION"
-msgstr ""
-
-#: plugin.py:338
-msgid "SAGITTARIUS"
-msgstr ""
-
-#: plugin.py:338
-msgid "CAPRICORN"
-msgstr ""
-
-#: plugin.py:338
 msgid "AQUARIUS"
 msgstr ""
 
-#: plugin.py:338
-msgid "PISCES"
+msgid "ARIES"
 msgstr ""
 
-#: plugin.py:342
-msgid "Select a Zodiac Sign"
+msgid "CANCER"
 msgstr ""
 
-#: plugin.py:345
+msgid "CAPRICORN"
+msgstr ""
+
+msgid "Change"
+msgstr ""
+
 msgid "Close"
 msgstr ""
 
-#: plugin.py:346
+msgid "GEMINI"
+msgstr ""
+
+msgid "Information"
+msgstr ""
+
+msgid "Italy Horoscope"
+msgstr ""
+
+msgid "LIBRA"
+msgstr ""
+
+msgid "LION"
+msgstr ""
+
+msgid "PISCES"
+msgstr ""
+
+msgid "Please wait, connecting to the server..."
+msgstr ""
+
+msgid "SAGITTARIUS"
+msgstr ""
+
+msgid "SCORPION"
+msgstr ""
+
 msgid "Select"
 msgstr ""
 
-#: plugin.py:381
-msgid "Italy Horoscope"
+msgid "Select a Zodiac Sign"
+msgstr ""
+
+msgid "TAURUS"
+msgstr ""
+
+msgid "Today's Horoscope"
+msgstr ""
+
+msgid "VIRGO"
 msgstr ""
