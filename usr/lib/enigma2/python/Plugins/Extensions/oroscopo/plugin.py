@@ -38,34 +38,22 @@ from sys import version_info
 from time import strftime, localtime
 from xml.dom import minidom
 import unicodedata
+from . import __version__
 
 
-version = '1.0'
-INFO_RI = _("Radioitalia Horoscope v.%s\n\nAuthor: Lululla\n\nGraphics: Oktus\n\nRss Horoscope: www.rtl.it/feed/rubriche/oroscopo\n\n") % version
+INFO_RI = _("Radioitalia Horoscope v.%s\n\nAuthor: Lululla\n\nGraphics: Oktus\n\nRss Horoscope: www.rtl.it/feed/rubriche/oroscopo\n\n") % __version__
 
 
 # datetime start for Italian Language
 days = {
-    "Monday": "lunedì",
-    "Tuesday": "martedì",
-    "Wednesday": "mercoledì",
-    "Thursday": "giovedì",
-    "Friday": "venerdì",
-    "Saturday": "sabato",
-    "Sunday": "domenica"}
+    "Monday": "lunedì", "Tuesday": "martedì", "Wednesday": "mercoledì",
+    "Thursday": "giovedì", "Friday": "venerdì", "Saturday": "sabato", "Sunday": "domenica"
+}
 months = {
-    "January": "gennaio",
-    "February": "febbraio",
-    "March": "marzo",
-    "April": "aprile",
-    "May": "maggio",
-    "June": "giugno",
-    "July": "luglio",
-    "August": "agosto",
-    "September": "settembre",
-    "October": "ottobre",
-    "November": "novembre",
-    "December": "dicembre"}
+    "January": "gennaio", "February": "febbraio", "March": "marzo", "April": "aprile",
+    "May": "maggio", "June": "giugno", "July": "luglio", "August": "agosto",
+    "September": "settembre", "October": "ottobre", "November": "novembre", "December": "dicembre"
+}
 
 days_of_the_week = {
     "Mon": "Lunedì", "Tue": "Martedì", "Wed": "Mercoledì", "Thu": "Giovedì",
@@ -102,8 +90,7 @@ def removeAccents(content):
         try:
             content = content.decode('utf-8')  # Decodifica i bytes in stringa
         except UnicodeDecodeError:
-            # Fallback per caratteri speciali
-            content = content.decode('latin-1')
+            content = content.decode('latin-1')  # Fallback per caratteri speciali
 
     content = unicodedata.normalize('NFKD', content)
     content = ''.join(c for c in content if not unicodedata.combining(c))
@@ -218,8 +205,7 @@ class oroscopoMain(Screen):
                 for zsign in dom.getElementsByTagName('item'):
                     tmp_zsign = {}
                     for tag in zsign_items:
-                        tmp_zsign[tag] = zsign.getElementsByTagName(
-                            tag)[0].firstChild.nodeValue
+                        tmp_zsign[tag] = zsign.getElementsByTagName(tag)[0].firstChild.nodeValue
                     zodiac.append(tmp_zsign)
 
                 dom.unlink()
@@ -233,8 +219,7 @@ class oroscopoMain(Screen):
                     giorno = parts[1]
                     mese = months_year.get(parts[2], "")
                     anno = parts[3]
-                    return "{} {} {} {}".format(
-                        giorno_settimana, giorno, mese, anno)
+                    return "{} {} {} {}".format(giorno_settimana, giorno, mese, anno)
 
                 mytime = format_rss_date(zodiactime)
                 maintext = _("Today's Horoscope ") + mytime
@@ -389,9 +374,4 @@ def main(session, **kwargs):
 def Plugins(path, **kwargs):
     global pluginpath
     pluginpath = path
-    return PluginDescriptor(
-        name=_("Italy Horoscope"),
-        description=_("Today's Horoscope "),
-        icon="plugin.png",
-        where=PluginDescriptor.WHERE_PLUGINMENU,
-        fnc=main)
+    return PluginDescriptor(name=_("Italy Horoscope"), description=_("Today's Horoscope "), icon="plugin.png", where=PluginDescriptor.WHERE_PLUGINMENU, fnc=main)
